@@ -13,8 +13,30 @@ dataset topredict hospital readmissions and understand key factors influencing p
     ```
 
 2. install dependencies
-pip install -r requirements.txt
-pip install -U pip
+   ```bash
+   pip install -r requirements.txt
+   pip install -U pip
+   ```
 
+## 2) Project layout
+```
 
-streamlit run dashboard
+.
+│   .gitignore
+│   README.md
+│   requirements.txt
+│
+├───dashboard # streamlit app
+├───data      # keep large/raw data out of git (see .gitignore)
+│   ├───interim
+│   ├───processed
+│   └───raw
+├───docs      # data ploicy, references, diagrams
+├───notebooks #Jupyter notebooks for EDA and experiments   
+├───reports   # PDF for drafts for each phase
+└───src       # reusable code (data loading, features, models, metrics)
+    ├───data
+    ├───eda
+    ├───models
+    └───utils
+```
