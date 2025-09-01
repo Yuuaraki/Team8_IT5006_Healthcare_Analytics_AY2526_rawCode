@@ -40,3 +40,11 @@ dataset topredict hospital readmissions and understand key factors influencing p
     ├───models
     └───utils
 ```
+
+## 3) Resources
+- ** Literature Review Link**
+  [Google Drive Folder] (https://drive.google.com/drive/folders/1l57gInQgJ82C-l8jHxNQgavq45fEphGD?usp=drive_link)
+
+
+## 4) Colab Links
+- [EDA Notebook (Colab)](https://colab.research.google.com/drive/1luurN5F4DD3GTSOB08KPBbCIsG0RtcQ-?usp=drive_link)
