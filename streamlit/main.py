@@ -20,18 +20,35 @@ show_pages = {
         st.Page("./pages/missing_values_by_variable.py",title="Missing Values by Variable",icon="❓"),
         st.Page("./pages/unique_values_by_variable.py",title="Unique Values by Variable",icon="🔢"),
     ],
-    "Univariate Analysis":[
-        st.Page("./pages/histograms_of_counts.py",title="Histograms of Counts for Categorical Features",icon="🔢"),
-        st.Page("./pages/Kernel_density_plot.py",title="Kernel Density Plot for Numeric Features",icon="📊"),
-        st.Page("./pages/swarm_plot_for_outliers.py",title="Swarm Plot for Outliers",icon="📉"),
+    "Univariate Analysis by Category":[
+        st.Page("./pages/Univariate_Analysis/UA_Demographics.py",title="Demographics",icon="📉"),
+        st.Page("./pages/Univariate_Analysis/UA_Admission_Details.py",title="Admission Details",icon="📉"),
+        st.Page("./pages/Univariate_Analysis/UA_Diagnoses.py",title="Diagnoses",icon="📉"),
+        st.Page("./pages/Univariate_Analysis/UA_Healthcare_Provider.py",title="Healthcare Provider",icon="📉"),
+        st.Page("./pages/Univariate_Analysis/UA_Clinical_Metrics.py",title="Clinical Metrics",icon="📉"),
+        st.Page("./pages/Univariate_Analysis/UA_Laboratory_Results.py",title="Laboratory Results",icon="📉"),
+        st.Page("./pages/Univariate_Analysis/UA_Medications.py",title="Medications",icon="📉"),
+        st.Page("./pages/Univariate_Analysis/UA_Treatment_Changes.py",title="Treatment Changes",icon="📉"),
     ],
     "Bivariate Analysis":[
-        st.Page("./pages/pair_plot_for_showing_the_distribution.py",title="Pair Plot for Showing the Distribution",icon="📉"),
-        st.Page("./pages/Boxplot_for_showing_the_distribution.py",title="Box Plot for Showing the Distribution",icon="🧊"),
+        # st.Page("./pages/pair_plot_for_showing_the_distribution.py",title="Pair Plot for Showing the Distribution",icon="📉"),
+        # st.Page("./pages/Boxplot_for_showing_the_distribution.py",title="Box Plot for Showing the Distribution",icon="🧊"),
+        st.Page("./pages/Bivariate_Analysis/BA_Demographics.py",title="Demographics",icon="📉"),
+        st.Page("./pages/Bivariate_Analysis/BA_Admission_Details.py",title="Admission Details",icon="📉"),
+        st.Page("./pages/Bivariate_Analysis/BA_Diagnoses.py",title="Diagnoses",icon="📉"),
+        st.Page("./pages/Bivariate_Analysis/BA_Healthcare_Provider.py",title="Healthcare Provider",icon="📉"),
+        # st.Page("./pages/Bivariate_Analysis/BA_Clinical_Metrics.py",title="Clinical Metrics",icon="📉"),
+        # st.Page("./pages/Bivariate_Analysis/BA_Laboratory_Results.py",title="Laboratory Results",icon="📉"),
+        # st.Page("./pages/Bivariate_Analysis/BA_Medications.py",title="Medications",icon="📉"),
+        # st.Page("./pages/Bivariate_Analysis/BA_Treatment_Changes.py",title="Treatment Changes",icon="📉"),
     ],
     "Multivariate Analysis":[
         st.Page("./pages/Correlation_Heatmap.py",title="Correlation Heatmap",icon="📊"),
-    ]
+    ],
+    "Play Ground":[
+        st.Page("./pages/playground.py",title="Playground",icon="🎮"),
+    ],
+
 
 }
 
