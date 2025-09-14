@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.title("Demographic Distribution Histograms")
+st.title("Demographic Distribution Histograms & Pie Chart")
 
 df_variables = st.session_state["df_variables"]
 df_origin = st.session_state["df_origin"]
@@ -15,6 +15,10 @@ tab1, tab2, tab3, tab4 = st.tabs(['Age', 'Gender', 'Race','Weight'])
 
 
 with tab1:
+    st.markdown(f"**Definition:** {df_variables[df_variables['name']=='age']['description']}")
+    st.markdown(""" **Findings and Observations**:  
+- There is a general trend of higher numbers of patients in older age brackets. Patients aged [70-80] form the largest group, followed by those aged [60-70] and [50-60]. However, patients aged [20-30] exhibited an early readmission rate of 14.2% , which is significantly higher than the average for older groups with around 10-11%.  """)
+    st.markdown("---")
     plt.figure(figsize=(10, 6))
     sns.countplot(data=df_origin, x='age', hue='readmitted', stat="count")
     plt.xlabel('Age')
@@ -46,6 +50,7 @@ with tab1:
     st.pyplot(plt)
 
 with tab2:
+    st.markdown(f"**Definition:** {df_variables[df_variables['name']=='gender']['description']}")
     plt.figure(figsize=(10, 6))
     sns.countplot(data=df_origin, x='gender', hue='readmitted', stat="count")
     plt.xlabel('Gender')
@@ -76,6 +81,10 @@ with tab2:
     st.pyplot(plt)
 
 with tab3:
+    st.markdown(f"**Definition:** {df_variables[df_variables['name']=='race']['description']}")
+    st.markdown(""" **Findings and Observations**:  
+- The sample dataset contains a significant racial imbalance, as over 70,000 patients are caucasian, followed by approximately 20,000 African American. While the remaining racial groups, Hispanic, Asian and Others, each represent less than 10,000 patient cases. Despite this disparity, the proportion of patients readmitted early is relatively consistent across races at around 10%-11%. """)
+    st.markdown("---")
     plt.figure(figsize=(10, 6))
     sns.countplot(data=df_origin, x='race', hue='readmitted', stat="count")
     plt.xlabel('Race')
@@ -106,6 +115,10 @@ with tab3:
     st.pyplot(plt)
 
 with tab4:
+    st.markdown(f"**Definition:** {df_variables[df_variables['name']=='weight']['description']}")
+    st.markdown(""" **Findings and Observations**:  
+- The most common weight groups are [75-100] (1,300 records), [50-75] (900), and [100-125] (~600). However, the early readmission rates decline as weight increases; [0-25] shows the most significant 16.7% and followed by [50-75] 11.7%, while [15-175] brackets only shows 8.6% """)
+    st.markdown("---")
     plt.figure(figsize=(10, 6))
     sns.countplot(data=df_origin, x='weight', hue='readmitted', stat="count")
     plt.xlabel('Weight')
