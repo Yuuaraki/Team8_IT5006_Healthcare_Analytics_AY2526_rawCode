@@ -18,30 +18,7 @@ dataset topredict hospital readmissions and understand key factors influencing p
    pip install -U pip
    ```
 
-## 2) Project layout
-```
-
-.
-│   .gitignore
-│   README.md
-│   requirements.txt
-│
-├───dashboard # streamlit app
-├───data      # keep large/raw data out of git (see .gitignore)
-│   ├───interim
-│   ├───processed
-│   └───raw
-├───docs      # data ploicy, references, diagrams
-├───notebooks #Jupyter notebooks for EDA and experiments   
-├───reports   # PDF for drafts for each phase
-└───src       # reusable code (data loading, features, models, metrics)
-    ├───data
-    ├───eda
-    ├───models
-    └───utils
-```
-
-## 3) Resources
+## 2) Resources
 - ** Literature Review Link**
   [Google Drive Folder] (https://drive.google.com/drive/folders/1l57gInQgJ82C-l8jHxNQgavq45fEphGD?usp=drive_link)
 
